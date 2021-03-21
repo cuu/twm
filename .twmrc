@@ -1,0 +1,198 @@
+#---------------------------------
+# CPI   # PROJ. : twmrc
+#       # FILE  : .twmrc
+#   +   # VER.  : 20170828.0718UTC
+#    +  # EMAIL : hal@clockworkpi.com
+#  +++  # HOST  : clockworkpi.com
+#---------------------------------
+
+NoGrabServer
+RestartPreviousState
+DecorateTransients
+RandomPlacement
+BorderWidth 1 
+NoHighlight
+OpaqueMove
+MenuBorderWidth 1
+NoMenuShadows
+
+NoDefaults
+LeftTitleButton "~/.twm/close" = f.delete
+RightTitleButton "~/.twm/iconify" = f.iconify
+RightTitleButton "~/.twm/resize" = f.resize
+RightTitleButton "~/.twm/fullsize" = f.fullzoom
+
+TitleFont "-adobe-helvetica-bold-r-normal--*-100-*-*-*-*-*-*"
+ResizeFont "-adobe-helvetica-bold-r-normal--*-100-*-*-*-*-*-*"
+MenuFont "-misc-fixed-medium-r-semicondensed-*-*-120-*-*-c-*-iso8859-8"
+IconFont "-adobe-helvetica-bold-r-normal--*-100-*-*-*-*-*-*"
+IconManagerFont "-adobe-helvetica-bold-r-normal--*-100-*-*-*"
+
+Color
+{
+   BorderColor "grey30"
+   DefaultBackground "rgb:5/5/5"
+   DefaultForeground "gray80"
+   TitleBackground "rgb:5/5/5"
+   TitleForeground "gray80"
+   MenuBackground "rgb:5/5/5"
+   MenuForeground "gray80"
+   MenuTitleBackground "gray80"
+   MenuTitleForeground "rgb:5/5/5"
+   MenuBorderColor "gray60"
+   IconBackground "rgb:4/4/4"
+   IconForeground "gray80"
+   IconBorderColor "gray70"
+   IconManagerBackground "rgb:5/5/5"
+   IconManagerForeground "gray80"
+}
+
+Cursors
+{
+   Menu "hand2"
+}
+
+ForceIcons
+Icons
+{
+	"Mozilla" "~/.twm/mozilla"
+	"Mozilla Firefox" "~/.twm/ff"
+	"Firefox"	"~/.twm/ff"
+	"Iceweasel"	"~/.twm/ff"
+	"xmms" "~/.twm/Bach"
+	"XPlaycd" "~/.twm/Bach"
+	"GIMP" "~/.twm/Escher"
+	"GNU Image Manipulation Program" "~/.twm/Escher"
+	"gimp"	"~/.twm/Escher"
+	"aMule 2.1.3" "~/.twm/am"
+	"xterm" "~/.twm/xlogo32"
+	"rxvt"	"~/.twm/BeOS_apple_terminal.xbm"
+	"urxvt"	"~/.twm/BeOS_apple_terminal.xbm"
+	"Blender" "~/.twm/blender-plain.xbm"
+  "OpenSCAD" "~/.twm/openscad.xbm"
+	"MPlayer" "~/.twm/BeOS_Video.xbm"
+	"Chromium"	"~/.twm/chrome.xbm"
+	"Chromium-browser"  "~/.twm/chrome.xbm"
+
+	"Google-chrome"	"~/.twm/chrome.xbm"
+	"Chrome"			"~/.twm/chrome.xbm"
+	"processing-app-Base" "~/.twm/processing.xbm"
+	"gedit"				"~/.twm/gedit-2.xbm"
+	"Xfce4-terminal" "~/.twm/xfce-term.xbm"
+	"Uex"						"~/.twm/uex.xbm"
+	"Xmessage"			"~/.twm/mac_msg.xbm"
+	"Gtkterm"				"~/.twm/gtkterm.xbm"
+	"jetbrains-webstorm" "~/.twm/webstorm.xbm"
+	"jetbrains-android-studio" "~/.twm/android_studio.xbm"
+	"jetbrains-studio"	"~/.twm/android_studio.xbm"
+	"konversation"	"~/.twm/irc.xbm"
+  "smplayer" "~/.twm/mplayer.xbm"
+  "kate"     "~/.twm/kate.xbm"
+  "kdevelop" "~/.twm/kdevelop.xbm"
+  "wps"      "~/.twm/wps.xbm"
+  "nautilus" "~/.twm/natu.xbm"
+  "inkscape" "~/.twm/ink.xbm"
+  "libreoffice-writer"  "~/.twm/word.xbm"
+  "libreoffice-calc"  "~/.twm/excel.xbm"
+  "sublime_text"  "~/.twm/sublime.xbm"
+  "subl"					"~/.twm/sublime.xbm"
+  "Vmware"  "~/.twm/vmware.xbm"
+  "libreoffice-startcenter" "~/.twm/office365.xbm"
+  "Skycoin"    "~/.twm/skycoin.xbm"
+  "Spaco"      "~/.twm/squashed.xbm"
+  "Geany"      "~/.twm/geany.xbm"
+	"feh"				 "~/.twm/feh.xbm"
+	"emacs"			 "~/.twm/gnu.xbm"
+	"Portacle"   "~/.twm/portacle.xbm"
+	"resolve"    "~/.twm/davinci.xbm" ## Davinci Resolve 
+	"Thunderbird" "~/.twm/thunderbird.xbm"
+	"dolphin"     "~/.twm/dolphin.xbm"
+	"konsole"     "~/.twm/BeOS_apple_terminal.xbm"
+	"Godot"       "~/.twm/godot.xbm"
+	"Godot_Engine" "~/.twm/godot.xbm"
+  "discord"     "~/.twm/discord.xbm"
+}
+
+
+MoveDelta 3
+Function "move-or-lower" { f.move f.deltastop f.lower }
+Function "move-or-raise" { f.move f.deltastop f.raise }
+Function "move-or-iconify" { f.move f.deltastop f.iconify }
+
+
+Button1 = : root : f.menu "main"
+Button3 = : root : f.menu "exec"
+Button1 = m : window|icon : f.function "move-or-raise"
+Button2 = m : window|icon : f.iconify
+Button3 = m : window|icon : f.resize
+Button1 = : title : f.function "move-or-raise"
+Button2 = : title : f.raiselower
+Button1 = : icon : f.function "move-or-iconify"
+Button2 = : icon : f.iconify
+Button1 = : iconmgr : f.iconify
+Button2 = : iconmgr : f.iconify
+Button3 = : title : f.iconify
+
+NoTitle
+{
+   "gkrellm"
+   "wpsoffice"
+}
+
+
+menu "main"
+{
+   "CLOCKWORKPI" f.title
+   "Raise" f.raise
+   "Lower" f.lower
+   "Focus" f.focus
+   "Unfocus" f.unfocus
+   "-------------" f.nop
+   "Show Iconmgr" f.showiconmgr
+   "Hide Iconmgr" f.hideiconmgr
+   "Kill" f.destroy
+   "-------------" f.nop
+   "Restart" f.restart
+   "Exit" ("gray80":"#773333") f.menu "exit"
+}
+
+menu "exit"
+{
+   "Are you sure ?" ("gray80":"#773333") f.title
+   "No" f.nop
+   "Yes" f.quit
+}
+
+menu "exec"
+{
+   ":: Applications ::" f.title
+   "Xterm"  ("gray80":"#334455") f.exec "exec /usr/bin/xterm &"
+   "Xterm Orange"   ("gray80":"#aa5522") f.exec "exec /usr/bin/xterm  -fg '#dc8700' &"
+
+   "Konsole"  ("gray80":"#667788") f.exec "exec /usr/bin/konsole &"
+
+   "Xmag"   f.exec "exec /usr/bin/xmag &"
+   "Gkrellm"   f.exec "/usr/bin/gkrellm &"
+   "XClock" f.exec "exec /usr/bin/xclock &"
+   "XFig"   f.exec "exec /usr/bin/xfig -nosplash &"
+   "Wicd client"  f.exec "exec /usr/bin/wicd-client -n &"
+   "xpdf"  f.exec "exec /usr/bin/xpdf &"
+}
+
+WindowRing
+{
+   "xterm"
+   "xpdf"
+}
+
+"r" = m | c: all : f.exec "exec /usr/bin/xterm -fg '#dc8700' &"
+"s" = m | c: all : f.exec "exec /usr/bin/alsamixergui &"
+"t" = m | c: all : f.exec "exec /usr/bin/xterm +sb &"
+"w" = m | c: all : f.exec "exec /usr/bin/wicd-client -n &"
+
+"i" = m | s: all : f.iconify
+"x" = m | s: all : f.delete
+
+"F12" = m : all : f.fullzoom
+"Tab" = m : all : f.warpring "next"
+
