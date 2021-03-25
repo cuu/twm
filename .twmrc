@@ -112,6 +112,8 @@ Icons
 	"Godot_Engine" "~/.twm/godot.xbm"
   "discord"     "~/.twm/discord.xbm"
   "TigerVNC Viewer" "~/.twm/vnc.xbm"
+  "Notepadqq"    "~/.twm/notepadqq.xbm"
+  "notepadqq-bin"    "~/.twm/notepadqq.xbm"
 }
 
 
