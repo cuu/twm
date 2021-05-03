@@ -114,6 +114,8 @@ Icons
   "TigerVNC Viewer" "~/.twm/vnc.xbm"
   "Notepadqq"    "~/.twm/notepadqq.xbm"
   "notepadqq-bin"    "~/.twm/notepadqq.xbm"
+  "DeltaChat"    "~/.twm/delta-chat.xbm"
+  "Keybase"      "~/.twm/keybase.xbm"
 }
 
 
