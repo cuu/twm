@@ -1,3 +1,8 @@
+#---------------------------------
+# CPI   # PROJ. : DT.R01.twmrc
+#       # FILE  : .ctwmrc
+#   +   # VER.  : 20220228.0718UTC
+#    +  # EMAIL : cuu@clockworkpi.com
 #  +++  # HOST  : clockworkpi.com
 #---------------------------------
 
@@ -13,14 +18,13 @@ MenuBorderWidth 1
 NoMenuShadows
 ShowWorkSpaceManager
 
-WorkSpaceManagerGeometry "260x60-3-1" 4
+WorkSpaceManagerGeometry "256x48-0-0" 3
 WorkSpaces
 {
 	# name  [{bg-button [fg-button] [bg-root] [fg-root] [pixmap-root]}]
-	"Main"    {"grey60" "black" "grey60" "black" "black" }
-	"Work A"  {"grey60" "black" "grey60" "black" "black"}
-	"Work B"  {"grey60" "black" "grey60" "black" "black"}
-	"Work C" {"grey60" "black" "grey60" "black" "black"}
+	"Main"    {"gray10" "gray40" "gray60" "black" "black" }
+	"Work U"  {"gray10" "gray40" "gray60" "black" "black"}
+	"Work V"  {"gray10" "gray40" "gray60" "black" "black"}
 }
 
 NoDefaults
@@ -37,26 +41,28 @@ IconManagerFont "-adobe-helvetica-bold-r-normal--*-100-*-*-*"
 
 Color
 {
+   TitleBackground "rgb:5/5/5"
+   TitleForeground "gray80"
+
    BorderColor "gray30"
    BorderTileForeground "black"
    BorderTileBackground "gray30"
 
    DefaultBackground "rgb:5/5/5"
    DefaultForeground "gray80"
-   TitleBackground "rgb:5/5/5"
-   TitleForeground "gray80"
+
+   IconBackground "rgb:4/4/4"
+   IconForeground "gray70"
+   IconBorderColor "gray70"
+   IconManagerBackground "rgb:2/2/2"
+   IconManagerForeground "gray80"
+
    MenuBackground "rgb:5/5/5"
    MenuForeground "gray80"
    MenuTitleBackground "gray80"
    MenuTitleForeground "rgb:5/5/5"
    MenuBorderColor "gray60"
-   IconBackground "rgb:4/4/4"
-   IconForeground "gray80"
-   IconBorderColor "gray70"
-   IconManagerBackground "rgb:5/5/5"
-   IconManagerForeground "gray80"
 }
-
 
 Cursors
 {
@@ -64,12 +70,70 @@ Cursors
 }
 
 ForceIcons
+
 Icons
 {
-   "xterm" "~/.twm/xlogo32"
-   "vmplayer" "~/.twm/xlogo32"
-   "thunderbird" "~/.twm/xlogo32"
-   "org.remmina.Remmina" "~/.twm/xlogo32"
+	"Mozilla" "~/.twm/mozilla"
+	"Mozilla Firefox" "~/.twm/ff"
+	"Firefox"	"~/.twm/ff"
+	"Iceweasel"	"~/.twm/ff"
+	"xmms" "~/.twm/Bach"
+	"XPlaycd" "~/.twm/Bach"
+	"GIMP" "~/.twm/Escher"
+	"GNU Image Manipulation Program" "~/.twm/Escher"
+	"gimp"	"~/.twm/Escher"
+	"aMule 2.1.3" "~/.twm/am"
+	"xterm" "~/.twm/xlogo32"
+	"rxvt"	"~/.twm/BeOS_apple_terminal.xbm"
+	"urxvt"	"~/.twm/BeOS_apple_terminal.xbm"
+	"Blender" "~/.twm/blender-plain.xbm"
+  "OpenSCAD" "~/.twm/openscad.xbm"
+	"MPlayer" "~/.twm/BeOS_Video.xbm"
+	"Chromium"	"~/.twm/chrome.xbm"
+	"Chromium-browser"  "~/.twm/chrome.xbm"
+
+	"Google-chrome"	"~/.twm/chrome.xbm"
+	"Chrome"			"~/.twm/chrome.xbm"
+	"processing-app-Base" "~/.twm/processing.xbm"
+	"gedit"				"~/.twm/gedit-2.xbm"
+	"Xfce4-terminal" "~/.twm/xfce-term.xbm"
+	"Uex"						"~/.twm/uex.xbm"
+	"Xmessage"			"~/.twm/mac_msg.xbm"
+	"Gtkterm"				"~/.twm/gtkterm.xbm"
+	"jetbrains-webstorm" "~/.twm/webstorm.xbm"
+	"jetbrains-android-studio" "~/.twm/android_studio.xbm"
+	"jetbrains-studio"	"~/.twm/android_studio.xbm"
+	"konversation"	"~/.twm/irc.xbm"
+  "smplayer" "~/.twm/mplayer.xbm"
+  "kate"     "~/.twm/kate.xbm"
+  "kdevelop" "~/.twm/kdevelop.xbm"
+  "wps"      "~/.twm/wps.xbm"
+  "nautilus" "~/.twm/natu.xbm"
+  "inkscape" "~/.twm/ink.xbm"
+  "libreoffice-writer"  "~/.twm/word.xbm"
+  "libreoffice-calc"  "~/.twm/excel.xbm"
+  "sublime_text"  "~/.twm/sublime.xbm"
+  "subl"					"~/.twm/sublime.xbm"
+  "Vmware"  "~/.twm/vmware.xbm"
+  "libreoffice-startcenter" "~/.twm/office365.xbm"
+  "Skycoin"    "~/.twm/skycoin.xbm"
+  "Spaco"      "~/.twm/squashed.xbm"
+  "Geany"      "~/.twm/geany.xbm"
+	"feh"				 "~/.twm/feh.xbm"
+	"emacs"			 "~/.twm/gnu.xbm"
+	"Portacle"   "~/.twm/portacle.xbm"
+	"resolve"    "~/.twm/davinci.xbm" ## Davinci Resolve 
+	"Thunderbird" "~/.twm/thunderbird.xbm"
+	"dolphin"     "~/.twm/dolphin.xbm"
+	"konsole"     "~/.twm/BeOS_apple_terminal.xbm"
+	"Godot"       "~/.twm/godot.xbm"
+	"Godot_Engine" "~/.twm/godot.xbm"
+  "discord"     "~/.twm/discord.xbm"
+  "TigerVNC Viewer" "~/.twm/vnc.xbm"
+  "Notepadqq"    "~/.twm/notepadqq.xbm"
+  "notepadqq-bin"    "~/.twm/notepadqq.xbm"
+  "DeltaChat"    "~/.twm/delta-chat.xbm"
+  "Keybase"      "~/.twm/keybase.xbm"
 }
 
 MoveDelta 3
@@ -88,6 +152,7 @@ Button1 = : icon : f.function "move-or-iconify"
 Button2 = : icon : f.iconify
 Button1 = : iconmgr : f.iconify
 Button2 = : iconmgr : f.iconify
+Button3 = : title : f.iconify
 
 NoTitle
 {
@@ -101,6 +166,7 @@ menu "main"
    "Lower..." f.lower
    "Focus..." f.focus
    "Unfocus..." f.unfocus
+   "Move..."   f.move
    "Show Iconmgr" ("gray80":"#445255") f.showiconmgr
    "Hide Iconmgr" ("gray80":"#445255") f.hideiconmgr
    "Kill..." f.destroy
@@ -119,6 +185,7 @@ menu "exit"
 menu "exec"
 {
    ":: Applications ::" f.title
+    "PIN/UnPIN" f.pin
    " Xterm       (Ctrl-Alt-t)" ("gray80":"#20404b") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 &"
    " Xterm in Orange" ("gray80":"#864b2d") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 -fg '#dc8700' &"
    " CRT terminal" ("gray80":"#664400") f.exec "exec /usr/bin/cool-retro-term&"
@@ -127,7 +194,7 @@ menu "exec"
    " Network...  (Ctrl-Alt-n)" ("gray80":"#2a3639") f.exec "exec /usr/bin/xterm +sb -T 'Network Manager' -fa 'fixed' -fs 12 -geometry 80x24 -e sudo /usr/bin/nmtui &"
    " Bluetooth   (Ctrl-Alt-b)" ("gray80":"#2a3639") f.exec "exec /usr/bin/xterm +sb -T 'Bluetoothctl' -fa 'fixed' -fs 12 -geometry 80x24 -e /usr/bin/bluetoothctl &"
    " Chromium    (Ctrl-Alt-c)" ("gray80":"#3a4649") f.exec "exec /usr/bin/chromium --incognito &"
-   " Chrome      (Ctrl-Alt-g)" ("gray80":"#3a4649") f.exec "exec /usr/bin/google-chrome --incognito &"
+   " Chrome      (Ctrl-Alt-g)" ("gray80":"#3a4649") f.exec "exec /usr/bin/google-chrome  &"
    " ELinks      (Ctrl-Alt-e)" ("gray80":"#3a4649") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 100x24 -e /usr/bin/elinks &"
    " Remmina     (Ctrl-Alt-r)" ("gray80":"#3a4649") f.exec "exec /usr/bin/remmina &"
    " VIM" ("gray80":"#445255") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 100x24 -e /usr/bin/vim &"
@@ -214,4 +281,8 @@ WindowRing
 
 "Print" =  : all : f.exec "exec maim --select --noopengl | xclip -selection clipboard -t image/png &"
 
+"Print" =  m : all : f.exec "exec maim -B --noopengl | xclip -selection clipboard -t image/png &"
 
+"F2" = m : all : f.nextworkspace
+
+"F3" = m : all : f.prevworkspace
