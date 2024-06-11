@@ -62,7 +62,7 @@ rxvt.iso14755_52: false
 
 URxvt.preeditType:Root
 !!调整此处设置输入法
-#URxvt.inputMethod:fcitx
+!#URxvt.inputMethod:fcitx
 !!颜色设置
 URxvt.depth:32
 !!中括号内数表示透明度
@@ -112,4 +112,18 @@ URxvt.italicFont:xft:Consolas:size=14:style=Italic:antialias=true,xft:Microsoft 
 !URxvt*font: xft:Monospace:pixelsize=12
 !URxvt*boldFont: xft:Monospace:bold:pixelsize=12
 
+! Keybindings for resizing font in xterm
+XTerm.VT100.translations: #override \n\
+    Shift<KeyPress>KP_Add: larger-vt-font() \n\
+    Shift<KeyPress>KP_Subtract: smaller-vt-font()
+
+! Define font sizes for xterm
+xterm*faceSize1: 8
+xterm*faceSize2: 10
+xterm*faceSize3: 12
+xterm*faceSize4: 14
+xterm*faceSize5: 16
+xterm*faceSize6: 18
+xterm*faceSize7: 20
+xterm*faceSize8: 24
 
