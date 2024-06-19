@@ -135,6 +135,7 @@ Icons
   "DeltaChat"    "~/.twm/delta-chat.xbm"
   "Keybase"      "~/.twm/keybase.xbm"
   "Oracle VM VirtualBox Manager" "~/.twm/vbox.xbm"
+  "gvim"         "~/.twm/vim.xbm"
 }
 
 MoveDelta 3
@@ -203,9 +204,9 @@ menu "exec"
    " VIM" ("gray80":"#445255") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 100x24 -e /usr/bin/vim &"
    " Emacs" ("gray80":"#445255") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 100x24 -e /usr/bin/emacs -nw &"
    " Tilde" ("gray80":"#445255") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 100x24 -e /usr/bin/tilde &"
-   " Sublime     (Ctrl-Alt-s)" ("gray80":"#445255") f.exec "exec /home/dphys/bin/sublime &"
+   " Sublime     (Ctrl-Alt-s)" ("gray80":"#445255") f.exec "exec subl &"
+   " Geany" ("gray80":"#445255") f.exec "exec geany &"
    " Obsidian    (Ctrl-Alt-o)" ("gray80":"#445255") f.exec "exec /usr/bin/obsidian &"
-   " VSCode      (Ctrl-Alt-v)" ("gray80":"#445255") f.exec "exec /home/dphys/bin/code &"
    " Basic Calc" ("gray80":"#314852") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 -e /usr/bin/bc -l &"
    " Maxima" ("gray80":"#314852") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 -e /usr/bin/maxima &"
    " Gnuplot" ("gray80":"#314852") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 -e /usr/bin/gnuplot &"
