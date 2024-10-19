@@ -136,6 +136,10 @@ Icons
   "Keybase"      "~/.twm/keybase.xbm"
   "Oracle VM VirtualBox Manager" "~/.twm/vbox.xbm"
   "gvim"         "~/.twm/vim.xbm"
+  "Weixin"  "~/.twm/weixin.xbm"
+  "微信"  "~/.twm/weixin.xbm"
+  "QQ"      "~/.twm/qq.xbm"
+
 }
 
 MoveDelta 3
