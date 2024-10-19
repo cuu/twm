@@ -5,6 +5,7 @@
 #    +  # EMAIL : hal@clockworkpi.com
 #  +++  # HOST  : clockworkpi.com
 #---------------------------------
+# sudo apt-get install t1-xfree86-nonfree ttf-xfree86-nonfree ttf-xfree86-nonfree-syriac xfonts-75dpi xfonts-100dpi
 
 NoGrabServer
 RestartPreviousState
@@ -87,7 +88,7 @@ Icons
 	"rxvt"	"~/.twm/BeOS_apple_terminal.xbm"
 	"urxvt"	"~/.twm/BeOS_apple_terminal.xbm"
 	"Blender" "~/.twm/blender-plain.xbm"
-  "OpenSCAD" "~/.twm/openscad.xbm"
+  	"OpenSCAD" "~/.twm/openscad.xbm"
 	"MPlayer" "~/.twm/BeOS_Video.xbm"
 	"Chromium"	"~/.twm/chrome.xbm"
 	"Chromium-browser"  "~/.twm/chrome.xbm"
@@ -97,9 +98,9 @@ Icons
 	"processing-app-Base" "~/.twm/processing.xbm"
 	"gedit"				"~/.twm/gedit-2.xbm"
 	"Xfce4-terminal" "~/.twm/xfce-term.xbm"
-	"Uex"						"~/.twm/uex.xbm"
-	"Xmessage"			"~/.twm/mac_msg.xbm"
-	"Gtkterm"				"~/.twm/gtkterm.xbm"
+	"Uex"		"~/.twm/uex.xbm"
+	"Xmessage"		"~/.twm/mac_msg.xbm"
+	"Gtkterm"		"~/.twm/gtkterm.xbm"
 	"jetbrains-webstorm" "~/.twm/webstorm.xbm"
 	"jetbrains-android-studio" "~/.twm/android_studio.xbm"
 	"jetbrains-studio"	"~/.twm/android_studio.xbm"
@@ -113,7 +114,7 @@ Icons
   "libreoffice-writer"  "~/.twm/word.xbm"
   "libreoffice-calc"  "~/.twm/excel.xbm"
   "sublime_text"  "~/.twm/sublime.xbm"
-  "subl"					"~/.twm/sublime.xbm"
+  "subl" "~/.twm/sublime.xbm"
   "Vmware"  "~/.twm/vmware.xbm"
   "libreoffice-startcenter" "~/.twm/office365.xbm"
   "Skycoin"    "~/.twm/skycoin.xbm"
@@ -134,8 +135,10 @@ Icons
   "notepadqq-bin"    "~/.twm/notepadqq.xbm"
   "DeltaChat"    "~/.twm/delta-chat.xbm"
   "Keybase"      "~/.twm/keybase.xbm"
-  "Oracle VM VirtualBox Manager" "~/.twm/vbox.xbm"
-  "gvim"         "~/.twm/vim.xbm"
+  "GVIM"    "~/.twm/vim.xbm"
+  "Weixin"  "~/.twm/weixin.xbm"
+  "微信"  "~/.twm/weixin.xbm"
+  "QQ"      "~/.twm/qq.xbm"
 }
 
 MoveDelta 3
@@ -190,28 +193,27 @@ menu "exec"
     "PIN/UnPIN" f.pin
    " Xterm       (Ctrl-Alt-t)" ("gray80":"#20404b") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 &"
    " Xterm in Orange" ("gray80":"#864b2d") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 -fg '#dc8700' &"
-   " Konsole " f.exec "exec konsole &"
+   " Konsole " f.exec "exec qterminal &"
 
    " CRT terminal" ("gray80":"#664400") f.exec "exec /usr/bin/cool-retro-term&"
    " CMUS        (Ctrl-Alt-m)" ("gray80":"#445255") f.exec "exec xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 -e cmus &"
    " ALSA Mixer" ("gray80":"#445255") f.exec "alsamixergui &"
    " Network...  (Ctrl-Alt-n)" ("gray80":"#2a3639") f.exec "exec /usr/bin/xterm +sb -T 'Network Manager' -fa 'fixed' -fs 12 -geometry 80x24 -e sudo /usr/bin/nmtui &"
    " Bluetooth   (Ctrl-Alt-b)" ("gray80":"#2a3639") f.exec "exec /usr/bin/xterm +sb -T 'Bluetoothctl' -fa 'fixed' -fs 12 -geometry 80x24 -e /usr/bin/bluetoothctl &"
-   " Chromium    (Ctrl-Alt-c)" ("gray80":"#3a4649") f.exec "exec /usr/bin/chromium  &"
+   " Chromium    (Ctrl-Alt-c)" ("gray80":"#3a4649") f.exec "exec chromium  &"
    " Chrome      (Ctrl-Alt-g)" ("gray80":"#3a4649") f.exec "exec /usr/bin/google-chrome  &"
    " ELinks      (Ctrl-Alt-e)" ("gray80":"#3a4649") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 100x24 -e /usr/bin/elinks &"
    " Remmina     (Ctrl-Alt-r)" ("gray80":"#3a4649") f.exec "exec /usr/bin/remmina &"
+   " Geany" ("gray80":"#445255") f.exec "exec geany &"
    " VIM" ("gray80":"#445255") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 100x24 -e /usr/bin/vim &"
    " Emacs" ("gray80":"#445255") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 100x24 -e /usr/bin/emacs -nw &"
    " Tilde" ("gray80":"#445255") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 100x24 -e /usr/bin/tilde &"
    " Sublime     (Ctrl-Alt-s)" ("gray80":"#445255") f.exec "exec subl &"
-   " Geany" ("gray80":"#445255") f.exec "exec geany &"
    " Obsidian    (Ctrl-Alt-o)" ("gray80":"#445255") f.exec "exec /usr/bin/obsidian &"
    " Basic Calc" ("gray80":"#314852") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 -e /usr/bin/bc -l &"
    " Maxima" ("gray80":"#314852") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 -e /usr/bin/maxima &"
    " Gnuplot" ("gray80":"#314852") f.exec "exec /usr/bin/xterm +sb -fa 'fixed' -fs 12 -geometry 80x24 -e /usr/bin/gnuplot &"
    " DosBox" ("gray80":"#20404b") f.exec "exec /usr/bin/dosbox &"
-   " Oracle VBox" ("gray80":"#20404b") f.exec "exec VirtualBox &" 
    " Chocolate-Doom" ("gray80":"#20404b") f.exec "SDL_RENDER_DRIVER=software /usr/games/chocolate-doom &"
    " Blender" ("gray80":"#445255") f.exec "exec ~/bin/blender &"
    " GIMP" ("gray80":"#445255") f.exec "exec /usr/bin/gimp &"
@@ -289,17 +291,10 @@ WindowRing
 "Print" =  m : all : f.exec "exec maim -B --noopengl | xclip -selection clipboard -t image/png &"
 
 
-"1" = m4 : all : f.gotoworkspace "Main"
+"F1" = m4 : all : f.gotoworkspace "Main"
 
-"2" = m4 : all : f.gotoworkspace "Work U"
+"F2" = m4 : all : f.gotoworkspace "Work U"
 
-"3" = m4 : all : f.gotoworkspace "Work V"
+"F3" = m4 : all : f.gotoworkspace "Work V"
 
-#>   shift       Shift_L (0x32),  Shift_R (0x3e)
-#>   lock        Caps_Lock (0x42)
-#>   control     Control_L (0x25),  Control_R (0x6d)
-#>   mod1        Alt_L (0x40),  Alt_R (0x71)
-#>   mod2        Num_Lock (0x4d)
-#>   mod3      
-#>   mod4        Super_L (0x73),  Super_R (0x74)
-#>   mod5        Scroll_Lock (0x4e)
+
