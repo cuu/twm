@@ -173,6 +173,7 @@ menu "main"
    "Focus..." f.focus
    "Unfocus..." f.unfocus
    "Move..."   f.move
+   "Screenshot"  f.exec "exec maim --select --noopengl | xclip -selection clipboard -t image/png &"
    "Show Iconmgr" ("gray80":"#445255") f.showiconmgr
    "Hide Iconmgr" ("gray80":"#445255") f.hideiconmgr
    "Kill..." f.destroy
